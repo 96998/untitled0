@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="serena-2.png">
+    <meta http-equiv="Refresh" content="10">
+    <title>插入一段脚本</title>
+</head>
+<body>
+<script>
+    document.write("Hello World");
+</script>
+<script>
+    document.write("<p style='background-color: #0000FF'>这是一个段落</p>")
+    document.write("<h1>这是一个标题</h1>")
+</script>
+<p id="demo">JavaScript可以触发事件,点击按钮</p>
+<script>
+    function f() {
+        document.getElementById("demo").innerHTML="Hello JavaScript";
+    }
+</script>
+<input type="button" onclick="f()" value="Click me">
+<noscript>抱歉您的浏览器不支持脚本或者禁用脚本</noscript>
+<p id="demo1" style="color: #0000FF">JavaScript能够改变html样式</p>
+<script>
+    function f2()
+    {
+        x=document.getElementById("demo1");
+        x.style.color="#ff0000";
+    }
+
+</script>
+<input type="button" onclick="f2()" value="点击我改变样式">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datalist案例</title>
+</head>
+<body>
+<form action="demo-form.php" method="get">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="submit">
+    <input type="reset">            <!--值得一提的是没有reset的话,你 选了一个就不能更改了-->
+</form>
+<p><strong>注意:</strong> Internet Explorer 9（更早 IE 版本），Safari 不支持 datali
+</body>
+</html>

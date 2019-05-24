@@ -1,0 +1,1 @@
+alert("Hello World");                   //弹出一个警示框

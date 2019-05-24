@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="serena-2.png">
+    <title>oninput事件一</title>
+</head>
+<body>
+<p>在文本框中尝试输入触发函数。</p>
+<form>
+<input type="text" id="myInput" oninput="myFunction()">
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myInput").value;
+        document.getElementById("demo").innerHTML = "你输入的是: " + x;
+    }
+</script>
+<input type="reset" value="重置"/>                <!--必须在同一form标签中内容才可以重置-->
+</form>
+</body>
+</html>
